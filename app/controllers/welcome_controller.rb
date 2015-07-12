@@ -1,7 +1,7 @@
 
 class WelcomeController < ApplicationController
   def time
-    @time1 = Time.now.strftime("%a, %e %b %H:%M:%S %p %Z %:z")
+    @time1 = Time.now.utc.strftime("%a, %e %b %Y %T %Z %:z")
   end
 
   def introduction
